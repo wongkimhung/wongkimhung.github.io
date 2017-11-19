@@ -238,7 +238,7 @@
 
     
         <meta property="article:published_time" content="Sat Nov 18 2017 21:14:54 GMT+0800" />
-        <meta property="article:modified_time" content="Sun Nov 19 2017 10:21:59 GMT+0800" />
+        <meta property="article:modified_time" content="Sun Nov 19 2017 10:25:28 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
@@ -265,7 +265,7 @@
     "mainEntityOfPage": "https://wongkimhung.github.io/2017/11/18/hexo-deploy-with-sources/index.html",
     "headline": "hexo-deploy-with-sources",
     "datePublished": "Sat Nov 18 2017 21:14:54 GMT+0800",
-    "dateModified": "Sun Nov 19 2017 10:21:59 GMT+0800",
+    "dateModified": "Sun Nov 19 2017 10:25:28 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "John Doe",
@@ -349,7 +349,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#场景"><span class="post-toc-number">1.</span> <span class="post-toc-text">场景</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装命令"><span class="post-toc-number">2.</span> <span class="post-toc-text">安装命令</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#config-yml"><span class="post-toc-number">3.</span> <span class="post-toc-text">_config.yml</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#修改部署源码"><span class="post-toc-number">4.</span> <span class="post-toc-text">修改部署源码</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#替换源码"><span class="post-toc-number">5.</span> <span class="post-toc-text">替换源码</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#发布git"><span class="post-toc-number">6.</span> <span class="post-toc-text">发布git</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#使hexo自动部署把markdown文章备份到git残酷"><span class="post-toc-number">1.</span> <span class="post-toc-text">使hexo自动部署把markdown文章备份到git残酷</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装命令"><span class="post-toc-number">2.</span> <span class="post-toc-text">安装命令</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#config-yml"><span class="post-toc-number">3.</span> <span class="post-toc-text">_config.yml</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#修改部署源码"><span class="post-toc-number">4.</span> <span class="post-toc-text">修改部署源码</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#替换源码"><span class="post-toc-number">5.</span> <span class="post-toc-text">替换源码</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#发布git"><span class="post-toc-number">6.</span> <span class="post-toc-text">发布git</span></a></li></ol>
     </ul>
     
 
@@ -484,7 +484,7 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><blockquote>
+        <h2 id="使hexo自动部署把markdown文章备份到git残酷"><a href="#使hexo自动部署把markdown文章备份到git残酷" class="headerlink" title="使hexo自动部署把markdown文章备份到git残酷"></a>使hexo自动部署把markdown文章备份到git残酷</h2><blockquote>
 <p>由于wordpress对markdown的支持不是很友好，看到这款hexo主题后我开始回归使用hexo<br>hexo 有个很友好的module 就是 hexo-deployer-git，这个插件可以一键生成和上传静态网页<br>但是我希望我的文章markdown可以一同备份 到git仓库</p>
 </blockquote>
 <h2 id="安装命令"><a href="#安装命令" class="headerlink" title="安装命令"></a>安装命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save #安装部署插件</span><br></pre></td></tr></table></figure>
