@@ -4,8 +4,7 @@ date: 2017-11-18 21:14:54
 tags:
 ---
 
-
-## 使hexo自动部署把markdown文章备份到git残酷
+## 使hexo自动部署把markdown文章备份到git仓库
 
 > 由于wordpress对markdown的支持不是很友好，看到这款hexo主题后我开始回归使用hexo
 > hexo 有个很友好的module 就是 hexo-deployer-git，这个插件可以一键生成和上传静态网页
