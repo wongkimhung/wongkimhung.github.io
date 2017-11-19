@@ -1,20 +1,20 @@
 ---
-title: hexo-deploy-with-sources
+title: 使hexo自动部署把markdown文章备份到git仓库
 date: 2017-11-18 21:14:54
 tags:
 ---
-
-## 使hexo自动部署把markdown文章备份到git仓库
 
 > 由于wordpress对markdown的支持不是很友好，看到这款hexo主题后我开始回归使用hexo
 > hexo 有个很友好的module 就是 hexo-deployer-git，这个插件可以一键生成和上传静态网页
 > 但是我希望我的文章markdown可以一同备份 到git仓库
 
-安装命令
---- 
+
+
+安装部署插件
+===
 
 ```
-npm install hexo-deployer-git --save #安装部署插件
+npm install hexo-deployer-git --save #
 ```
 
 _config.yml
@@ -26,7 +26,8 @@ deploy:
   branch: master
 ```
 
-## 修改部署源码
+修改部署源码
+===
 
 找到项目下 **node_modules/hexo-deployer-git/lib/deployer.js**
 
@@ -212,6 +213,9 @@ function commitMessage(args) {
 }
 
 ```
+
+主要代码
+---
 ```
 
 # 声明路径
@@ -236,9 +240,16 @@ then(function() {
       return fs.copyDir(sourceDir, deployDir + '/sources', opts);
   })
 ```
- 
-## 发布git
 
+使修改代码生效
+---
+```
+npm install
+# 千万不要update 否则会被替换
+```
+
+发布git
+===
 ```
 hexo d #发布上仓库
 ```
